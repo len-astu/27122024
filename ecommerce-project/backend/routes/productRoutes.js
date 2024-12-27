@@ -1,0 +1,1 @@
+router.get('/customer/products', productController.getProducts);
