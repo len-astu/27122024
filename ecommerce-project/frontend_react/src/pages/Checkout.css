@@ -1,0 +1,33 @@
+.checkout-page {
+  padding: 20px;
+}
+
+.order-summary,
+.shipping-form,
+.payment-form {
+  margin-bottom: 20px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.place-order-btn {
+  font-size: 16px;
+  width: 100%;
+}

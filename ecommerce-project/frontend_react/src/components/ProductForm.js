@@ -84,3 +84,4 @@ const ProductForm = ({ onSubmit, editingProduct, isEditing, cancelEdit }) => {
     </form>
   );
 };
+export default ProductForm;

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import api from "../services/api";
 
 const ProductTable = ({ products, onDeleteProduct }) => {
   const [newProduct, setNewProduct] = useState({
@@ -11,6 +12,7 @@ const ProductTable = ({ products, onDeleteProduct }) => {
     e.preventDefault();
     try {
       const response = await api.post("/admin/products", newProduct);
+      console.log("New product added:", response.data); // Log or use the response data
       setNewProduct({ name: "", price: "", stock: "" });
       alert("Product added successfully!");
     } catch (error) {
